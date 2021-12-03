@@ -15,19 +15,20 @@ func NewSubmarine() Submarine {
 }
 
 type submarine struct {
-	depth, pos int
+	depth, pos, aim int
 }
 
 func (s *submarine) Up(v int) {
-	s.depth -= v
+	s.aim -= v
 }
 
 func (s *submarine) Down(v int) {
-	s.depth += v
+	s.aim += v
 }
 
 func (s *submarine) Forward(v int) {
 	s.pos += v
+	s.depth += v * s.aim
 }
 
 func (s *submarine) Backward(v int) {

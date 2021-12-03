@@ -12,7 +12,7 @@ func Test_BasicNavigation(t *testing.T) {
 	s.Down(8)
 	s.Forward(2)
 
-	if s.Depth() != 10 {
+	if s.Depth() != 60 {
 		t.Fail()
 	}
 
