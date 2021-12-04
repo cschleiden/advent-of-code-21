@@ -14,4 +14,7 @@ func main() {
 
 	gamma, epsilon := calc(strings.Split(string(inputs), "\n"))
 	fmt.Println(gamma, epsilon, gamma*epsilon)
+
+	oxygen, scrubber := calc_2(strings.Split(string(inputs), "\n"))
+	fmt.Println(oxygen, scrubber, oxygen*scrubber)
 }
